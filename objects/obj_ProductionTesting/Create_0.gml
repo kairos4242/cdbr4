@@ -75,6 +75,9 @@ main_camera = camera_create_view(main1.x - (display_get_width() / 2), main1.y - 
 view_camera[0] = main_camera
 camera_speed = 30//rate at which moving mouse to edge scrolls camera
 
+//setup GUI size
+display_set_gui_maximize()
+
 //Control Groups
 control_group_1 = ds_list_create()
 

@@ -27,7 +27,7 @@ if (ds_list_size(game_controller.selected_list) == 1)
 	draw_text(right_bound - 100, upper_bound + 100, selected_unit.type)
 	draw_set_halign(fa_center)
 	draw_text(left_bound + 150, lower_bound - 50, string(selected_unit.hp) + " / " + string(selected_unit.max_hp))
-	draw_set_font(fntMain)
+	draw_set_font(fnt_UI)
 	//TODO: add tooltips and images for attack and armor and shield
 }
 

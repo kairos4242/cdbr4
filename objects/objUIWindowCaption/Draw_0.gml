@@ -5,4 +5,3 @@ draw_set_halign(1);
 draw_set_valign(1);
 draw_set_color($808080);
 draw_text(__width * 0.5, 12, string_hash_to_newline(caption));
-
