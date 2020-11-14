@@ -9,7 +9,7 @@ if (zui_get_hover()) {
 
 ui_draw_sprite_panel(sprButton, 0, 8, -6, -6, __width + 12, __height + 12);
 
-draw_set_font(fntMain);
+draw_set_font(fnt_UI);
 draw_set_halign(1);
 draw_set_valign(1);
 draw_set_color(merge_color(draw_get_color(), 0, 0.5));

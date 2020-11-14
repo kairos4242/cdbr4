@@ -35,6 +35,7 @@
     {"id":{"name":"load_key","path":"scripts/load_key/load_key.yy",},"order":7,},
     {"id":{"name":"resource_nearest_unoccupied","path":"scripts/resource_nearest_unoccupied/resource_nearest_unoccupied.yy",},"order":0,},
     {"id":{"name":"town_hall_nearest_friendly","path":"scripts/town_hall_nearest_friendly/town_hall_nearest_friendly.yy",},"order":1,},
+    {"id":{"name":"fnt_UI","path":"fonts/fnt_UI/fnt_UI.yy",},"order":3,},
     {"id":{"name":"split_selected","path":"scripts/split_selected/split_selected.yy",},"order":3,},
     {"id":{"name":"fnt_Glitch18","path":"fonts/fnt_Glitch18/fnt_Glitch18.yy",},"order":2,},
     {"id":{"name":"get_build_time","path":"scripts/get_build_time/get_build_time.yy",},"order":4,},
