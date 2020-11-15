@@ -10,30 +10,50 @@ with (zui_create(0, 0, objUIWindowCaption)) {
 with (zui_create(12, 38, objUIButton)) {
  zui_set_anchor(0, 0);
  zui_set_size(120, 32);
- caption = "Campaign";
- callback = scr_PlayCallback;
+ caption = "Build SCV";
+ callback = scr_ChangeHotkeyCallback;
+ hotkey = "key_build_scv"
  
 }
 
 with (zui_create(140, 38, objUIButton)) {
  zui_set_anchor(0, 0);
  zui_set_size(120, 32);
- caption = "Custom Game";
- callback = scr_PlayCallback;
+ caption = "Build Marine";
+ callback = scr_ChangeHotkeyCallback;
+ hotkey = "key_build_marine";
 }
 
 with (zui_create(268, 38, objUIButton)) {
  zui_set_anchor(0, 0);
  zui_set_size(120, 32);
- caption = "Settings";
- callback = scr_SettingsCallback;
+ caption = "Build Barracks";
+ callback = scr_ChangeHotkeyCallback;
+ hotkey = "key_build_barracks";
 }
 
 with (zui_create(12, 82, objUIButton)) {
  zui_set_anchor(0, 0);
- zui_set_size(376, 80);
- caption = "Play!";
- callback = scr_PlayCallback;
+ zui_set_size(120, 32);
+ caption = "Build Reaper";
+ callback = scr_ChangeHotkeyCallback;
+ hotkey = "key_build_reaper";
+}
+
+with (zui_create(140, 82, objUIButton)) {
+ zui_set_anchor(0, 0);
+ zui_set_size(120, 32);
+ caption = "Reaper D8 Charge";
+ callback = scr_ChangeHotkeyCallback;
+ hotkey = "key_reaper_d8_charge";
+}
+
+with (zui_create(268, 82, objUIButton)) {
+ zui_set_anchor(0, 0);
+ zui_set_size(120, 32);
+ caption = "Build Factory";
+ callback = scr_ChangeHotkeyCallback;
+ hotkey = "key_build_factory";
 }
 
 with (zui_create(12, 170, objUICheckbox)) {

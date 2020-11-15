@@ -22,4 +22,11 @@ with (zui_main()) {
   //idea here is to have tabs on the top left(corner doesnt matter) that control which hotkey group/race is currently being displayed
   //when each is pressed, the main zui window is destroyed and replaced by the one the button controls
   hotkey_tabs = zui_create(300, 64, obj_HotkeyTabs)
+  exit_button = zui_create(zui_get_width() - 100, 48, objUIButton)
+  with (exit_button)
+  {
+	  zui_set_size(100, 32)
+	  callback = scr_GotoMainMenuCallback
+	  caption = "Exit"
+  }
 }
