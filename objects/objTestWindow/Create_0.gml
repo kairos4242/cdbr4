@@ -24,7 +24,7 @@ with (zui_create(268, 38, objUIButton)) {
  zui_set_anchor(0, 0);
  zui_set_size(120, 32);
  caption = "Settings";
- callback = scr_PlayCallback;
+ callback = scr_SettingsCallback;
 }
 
 with (zui_create(12, 82, objUIButton)) {

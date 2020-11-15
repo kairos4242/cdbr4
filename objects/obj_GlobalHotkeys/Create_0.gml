@@ -3,7 +3,7 @@
 zui_set_size(400, 216);
  
 with (zui_create(0, 0, objUIWindowCaption)) {
- caption = "Terran Hotkeys";
+ caption = "Global Hotkeys";
  draggable = 1;
 }
 
