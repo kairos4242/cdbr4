@@ -40,6 +40,7 @@
     {"id":{"name":"town_hall_nearest_friendly","path":"scripts/town_hall_nearest_friendly/town_hall_nearest_friendly.yy",},"order":1,},
     {"id":{"name":"fnt_UI","path":"fonts/fnt_UI/fnt_UI.yy",},"order":3,},
     {"id":{"name":"split_selected","path":"scripts/split_selected/split_selected.yy",},"order":3,},
+    {"id":{"name":"obj_HotkeyListener","path":"objects/obj_HotkeyListener/obj_HotkeyListener.yy",},"order":4,},
     {"id":{"name":"fnt_Glitch18","path":"fonts/fnt_Glitch18/fnt_Glitch18.yy",},"order":2,},
     {"id":{"name":"get_build_time","path":"scripts/get_build_time/get_build_time.yy",},"order":4,},
     {"id":{"name":"d3d_transform_add_scaling","path":"scripts/d3d_transform_add_scaling/d3d_transform_add_scaling.yy",},"order":0,},

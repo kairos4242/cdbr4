@@ -9,6 +9,7 @@ if not file_exists("game_settings.ini")
 	ini_write_string("hotkeys", "key_controlgroup_1", "O")
 	ini_write_string("hotkeys", "key_build_barracks", "B")
 	ini_write_string("hotkeys", "key_attack_move", "A")
+	ini_close()
 }
 
 //setup room UI
