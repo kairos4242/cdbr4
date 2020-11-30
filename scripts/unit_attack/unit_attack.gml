@@ -9,7 +9,11 @@ function unit_attack() {
 	}
 	else
 	{
-		perform_attack(attacks[0], target)
+		if (attacks[0].current_cooldown = 0)
+		{
+			attacks[0].current_cooldown = attacks[0].cooldown
+			perform_attack(attacks[0], target)
+		}
 	}
 
 
