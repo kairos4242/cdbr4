@@ -158,12 +158,12 @@
     "name": "Default",
     "children": [],
   },
-  "RoomOrder": [
-    {"name":"roomTest","path":"rooms/roomTest/roomTest.yy",},
-    {"name":"rm_ProductionTesting","path":"rooms/rm_ProductionTesting/rm_ProductionTesting.yy",},
-    {"name":"rm_WorkerTesting","path":"rooms/rm_WorkerTesting/rm_WorkerTesting.yy",},
-    {"name":"rm_UnitTesting","path":"rooms/rm_UnitTesting/rm_UnitTesting.yy",},
-    {"name":"rm_Hotkeys","path":"rooms/rm_Hotkeys/rm_Hotkeys.yy",},
+  "RoomOrderNodes": [
+    {"roomId":{"name":"roomTest","path":"rooms/roomTest/roomTest.yy",},},
+    {"roomId":{"name":"rm_ProductionTesting","path":"rooms/rm_ProductionTesting/rm_ProductionTesting.yy",},},
+    {"roomId":{"name":"rm_WorkerTesting","path":"rooms/rm_WorkerTesting/rm_WorkerTesting.yy",},},
+    {"roomId":{"name":"rm_UnitTesting","path":"rooms/rm_UnitTesting/rm_UnitTesting.yy",},},
+    {"roomId":{"name":"rm_Hotkeys","path":"rooms/rm_Hotkeys/rm_Hotkeys.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -208,13 +208,13 @@
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
   ],
   "TextureGroups": [
-    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"targets":461609314234257646,"resourceVersion":"1.0","name":"Default","resourceType":"GMTextureGroup",},
+    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":461609314234257646,"resourceVersion":"1.0","name":"Default","resourceType":"GMTextureGroup",},
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.0.529",
+    "IDEVersion": "2.3.1.536",
   },
-  "resourceVersion": "1.3",
+  "resourceVersion": "1.4",
   "name": "CDBR4 Runtime 2.3",
   "tags": [],
   "resourceType": "GMProject",

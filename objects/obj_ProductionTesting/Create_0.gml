@@ -32,7 +32,7 @@ for (i = 0; i < 6; i++)
 {
 	with (instance_create_layer(opponent_spawn[0] - (72 - 24 * i), opponent_spawn[1] + 200, "Instances", obj_Worker))
 	{
-		controller = other.player1
+		controller = other.player2
 	}
 }
 
