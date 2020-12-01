@@ -10,6 +10,8 @@ upper_bound = window_height - 350
 lower_bound = window_height
 draw_rectangle(left_bound, upper_bound, right_bound, lower_bound, false)
 draw_set_color(c_white)
+draw_text(64, window_height / 2, display_grid_x)
+draw_text(64, window_height / 2 + 64, display_grid_y)
 
 
 //check if one thing selected and if so display the full shebang about it
@@ -44,7 +46,7 @@ else
 		//display unit in box
 		selected_unit = ds_list_find_value(game_controller.selected_list, i)
 		//draw_text(0, 0, string(display_x + (64 * (i % 8))) + " " + string(display_y + (64 * floor(i / 8))))
-		draw_text(left_bound + display_x + (64 * (i % 8)),upper_bound + display_y + (64 * floor(i / 8)), string_char_at(selected_unit.name, 1))
+		draw_text(left_bound + display_x + (padding * (i % units_per_row)),upper_bound + display_y + (padding * floor(i / units_per_row)), string_char_at(selected_unit.name, 1))
 	}
 	draw_set_halign(fa_center)
 	draw_set_valign(fa_middle)

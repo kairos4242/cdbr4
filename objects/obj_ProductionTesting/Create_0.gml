@@ -64,16 +64,19 @@ with (zui_main()) {
   }
 }
 
+
+//create camera centred on main
+main_camera = camera_create_view(main1.x - (display_get_width() / 2), main1.y - (display_get_height() / 2), 2736, 1824)
+view_camera[0] = main_camera
+camera_speed = 30//rate at which moving mouse to edge scrolls camera
+
 //Non-ZUI UI Stuff
 unit_display = instance_create_layer(0, 0, "Instances", obj_UIUnitDisplay)
 with (unit_display)
 {
 	game_controller = other
+	main_camera = other.main_camera
 }
-//create camera centred on main
-main_camera = camera_create_view(main1.x - (display_get_width() / 2), main1.y - (display_get_height() / 2), 2736, 1824)
-view_camera[0] = main_camera
-camera_speed = 30//rate at which moving mouse to edge scrolls camera
 
 //setup GUI size
 display_set_gui_maximize()
