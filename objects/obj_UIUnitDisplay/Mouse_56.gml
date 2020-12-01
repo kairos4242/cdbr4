@@ -16,9 +16,25 @@ if (ds_list_size(game_controller.selected_list) > 1)
 			//deselect said unit, right now x starts counting from 0 and y from 1 but bear with me
 			with ds_list_find_value(game_controller.selected_list, max(1, (units_per_row * display_grid_y) + (display_grid_x)))
 			{
+				//max is here for safety that a unit value that doesn't exist is never selected
 				selected = false
 			}
 			ds_list_delete(game_controller.selected_list, max(1, (units_per_row * display_grid_y) + (display_grid_x)))
+		}
+		else
+		{
+			//select only that unit, deselect all others
+			to_select = ds_list_find_value(game_controller.selected_list, max(1, (units_per_row * display_grid_y) + (display_grid_x)))
+			for (i = 0;i < ds_list_size(game_controller.selected_list); i++)
+			{
+				with ds_list_find_value(game_controller.selected_list,i)
+				{
+					selected = false
+				}
+			}
+			ds_list_clear(game_controller.selected_list)
+			with to_select selected = true
+			ds_list_add(game_controller.selected_list, to_select)
 		}
 	}
 }
