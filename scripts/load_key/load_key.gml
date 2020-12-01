@@ -28,7 +28,7 @@ function load_key(key_to_load){
 				case "=": return 187
 				case ",": return 188
 				case "-": return 189
-				case ",": return 190
+				case ".": return 190
 				case "/": return 191
 				case "`": return 192
 				case "[": return 219
