@@ -1,3 +1,6 @@
+//add global reference so any object can see game controller's properties
+global.game_controller = self
+
 //roll for spawn positions
 spawn_positions = [[1368, 912], [4104,912]]
 spawn_roll = irandom(1)
@@ -85,25 +88,17 @@ display_set_gui_maximize()
 control_group_1 = ds_list_create()
 
 //Hotkeys
-if not file_exists("game_settings.ini")
-{
-	//create ini with default hotkeys
-	//NOTE: must write to file as capitals, otherwise ord() in load_key() will not work
-	ini_open("game_settings.ini")
-	ini_write_string("hotkeys", "key_build_scv", "S")
-	ini_write_string("hotkeys", "key_build_marine", "P")
-	ini_write_string("hotkeys", "key_controlgroup_1", "O")
-	ini_write_string("hotkeys", "key_build_barracks", "B")
-	ini_write_string("hotkeys", "key_attack_move", "A")
-	ini_write_string("hotkeys", "key_build_marauder", "J")
-}
+global_hotkey_struct = load_global_hotkeys()
+terran_hotkey_struct = load_terran_hotkeys()
+
+
 //load settings from game_settings.ini
 //is there some way to automatically read in all keys?
-ini_open("game_settings.ini")
+/*ini_open("game_settings.ini")
 hotkeys = ds_map_create()
 hotkeys[? "key_build_scv"] = load_key(ini_read_string("hotkeys", "key_build_scv", "S"))
 hotkeys[? "key_build_marine"] = load_key(ini_read_string("hotkeys", "key_build_marine", "P"))
 hotkeys[? "key_controlgroup_1"] = load_key(ini_read_string("hotkeys", "key_controlgroup_1", "O"))
 hotkeys[? "key_build_barracks"] = load_key(ini_read_string("hotkeys", "key_build_barracks", "B"))
 hotkeys[? "key_attack_move"] = load_key(ini_read_string("hotkeys", "key_attack_move", "A"))
-hotkeys[? "key_build_marauder"] = load_key(ini_read_string("hotkeys", "key_build_marauder", "J"))
+hotkeys[? "key_build_marauder"] = load_key(ini_read_string("hotkeys", "key_build_marauder", "J"))*/

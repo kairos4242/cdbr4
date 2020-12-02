@@ -48,15 +48,16 @@ if display_mouse_get_y() == 0
 //not sure whether to do this with separate scripts like key_build_scv_pressed()
 //or to just put them straight inside the if statement
 //as of right now going to go with putting code inside if statements
-if keyboard_check_released(hotkeys[? "key_build_scv"])
+show_debug_message(terran_hotkey_struct.key_build_scv)
+if keyboard_check_released(check_key(terran_hotkey_struct.key_build_scv))
 {
 	building_build(obj_Worker, "obj_CommandCentre")
 }
-if keyboard_check_released(hotkeys[? "key_build_marine"])
+if keyboard_check_released(check_key(terran_hotkey_struct.key_build_marine))
 {
 	building_build(obj_Marine, "obj_Barracks")
 }
-if keyboard_check_released(hotkeys[? "key_controlgroup_1"])
+if keyboard_check_released(check_key(global_hotkey_struct.key_controlgroup_1))
 {
 	if keyboard_check(vk_control)
 	{
@@ -98,11 +99,11 @@ if keyboard_check_released(hotkeys[? "key_controlgroup_1"])
 		}
 	}
 }
-if keyboard_check_released(hotkeys[? "key_build_barracks"])
+if keyboard_check_released(check_key(terran_hotkey_struct.key_build_barracks))
 {
 	unit_build_command(obj_Barracks, "obj_Worker")
 }
-if keyboard_check_released(hotkeys[? "key_attack_move"])
+if keyboard_check_released(check_key(global_hotkey_struct.key_attack_move))
 {
 	//split array into units and buildings, only attack move with units
 	split_array = split_selected(selected_list)

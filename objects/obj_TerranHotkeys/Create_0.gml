@@ -13,6 +13,7 @@ with (zui_create(12, 38, objUIButton)) {
  caption = "Build SCV";
  callback = scr_ChangeHotkeyCallback;
  hotkey = "key_build_scv"
+ hotkey_type = "Terran"
  
 }
 
@@ -22,6 +23,7 @@ with (zui_create(140, 38, objUIButton)) {
  caption = "Build Marine";
  callback = scr_ChangeHotkeyCallback;
  hotkey = "key_build_marine";
+ hotkey_type = "Terran"
 }
 
 with (zui_create(268, 38, objUIButton)) {
@@ -30,6 +32,7 @@ with (zui_create(268, 38, objUIButton)) {
  caption = "Build Barracks";
  callback = scr_ChangeHotkeyCallback;
  hotkey = "key_build_barracks";
+ hotkey_type = "Terran"
 }
 
 with (zui_create(12, 82, objUIButton)) {
@@ -38,6 +41,7 @@ with (zui_create(12, 82, objUIButton)) {
  caption = "Build Reaper";
  callback = scr_ChangeHotkeyCallback;
  hotkey = "key_build_reaper";
+ hotkey_type = "Terran"
 }
 
 with (zui_create(140, 82, objUIButton)) {
@@ -46,6 +50,7 @@ with (zui_create(140, 82, objUIButton)) {
  caption = "Reaper D8 Charge";
  callback = scr_ChangeHotkeyCallback;
  hotkey = "key_reaper_d8_charge";
+ hotkey_type = "Terran"
 }
 
 with (zui_create(268, 82, objUIButton)) {
@@ -54,6 +59,7 @@ with (zui_create(268, 82, objUIButton)) {
  caption = "Build Factory";
  callback = scr_ChangeHotkeyCallback;
  hotkey = "key_build_factory";
+ hotkey_type = "Terran"
 }
 
 with (zui_create(12, 170, objUICheckbox)) {
