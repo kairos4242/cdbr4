@@ -3,7 +3,8 @@ function unit_attack() {
 	{
 		unit_action_complete()
 	}
-	if distance_to_object(target) > /*attack.range todo later when attacks are a thing*/ 100
+	if attacks[0] = -1 exit//failsafe for units that have no attack
+	if distance_to_object(target) > attacks[0].range
 	{
 		mp_potential_step(target.x,target.y,move_speed,false)
 	}

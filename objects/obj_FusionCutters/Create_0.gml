@@ -7,3 +7,4 @@ cc = -1
 attacks = 1
 cooldown = 30
 current_cooldown = 0
+range = 100

@@ -18,8 +18,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_BasicWeapon","path":"objects/obj_BasicWeapon/obj_BasicWeapon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_BasicWeapon","path":"objects/obj_BasicWeapon/obj_BasicWeapon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_FusionCutters","path":"objects/obj_FusionCutters/obj_FusionCutters.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_FusionCutters","path":"objects/obj_FusionCutters/obj_FusionCutters.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -28,7 +28,7 @@
     "path": "folders/Objects/Weapons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_BasicWeapon",
+  "name": "obj_FusionCutters",
   "tags": [],
   "resourceType": "GMObject",
 }
