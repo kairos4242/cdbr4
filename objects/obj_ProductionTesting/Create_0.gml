@@ -98,6 +98,7 @@ if not file_exists("game_settings.ini")
 	ini_write_string("hotkeys", "key_build_marauder", "J")
 }
 //load settings from game_settings.ini
+//is there some way to automatically read in all keys?
 ini_open("game_settings.ini")
 hotkeys = ds_map_create()
 hotkeys[? "key_build_scv"] = load_key(ini_read_string("hotkeys", "key_build_scv", "S"))
@@ -105,4 +106,4 @@ hotkeys[? "key_build_marine"] = load_key(ini_read_string("hotkeys", "key_build_m
 hotkeys[? "key_controlgroup_1"] = load_key(ini_read_string("hotkeys", "key_controlgroup_1", "O"))
 hotkeys[? "key_build_barracks"] = load_key(ini_read_string("hotkeys", "key_build_barracks", "B"))
 hotkeys[? "key_attack_move"] = load_key(ini_read_string("hotkeys", "key_attack_move", "A"))
-hotkeys[? "key_build_marauder"] = load_key(ini_read_string("hotkeys", "key_build_marauder", "A"))
+hotkeys[? "key_build_marauder"] = load_key(ini_read_string("hotkeys", "key_build_marauder", "J"))
