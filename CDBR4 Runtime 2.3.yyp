@@ -64,6 +64,7 @@
     {"id":{"name":"unit_action_complete","path":"scripts/unit_action_complete/unit_action_complete.yy",},"order":5,},
     {"id":{"name":"zui_set_width","path":"scripts/zui_set_width/zui_set_width.yy",},"order":6,},
     {"id":{"name":"zui_set_height","path":"scripts/zui_set_height/zui_set_height.yy",},"order":7,},
+    {"id":{"name":"obj_PunisherGrenades","path":"objects/obj_PunisherGrenades/obj_PunisherGrenades.yy",},"order":2,},
     {"id":{"name":"zui_set_position","path":"scripts/zui_set_position/zui_set_position.yy",},"order":8,},
     {"id":{"name":"zui_set_anchor","path":"scripts/zui_set_anchor/zui_set_anchor.yy",},"order":9,},
     {"id":{"name":"zui_set_scale","path":"scripts/zui_set_scale/zui_set_scale.yy",},"order":10,},
