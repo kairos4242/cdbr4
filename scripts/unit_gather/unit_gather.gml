@@ -23,7 +23,7 @@ function unit_gather() {
 	{
 		if distance_to_object(resource_target) < 5
 		{
-			if resource_target.occupied != id && resource_target.occupied != 0
+			if ((resource_target.occupied != id) and (resource_target.occupied != 0))
 			{
 				//whoops, somebody took this one, time to find a new patch
 				resource_target = -1
