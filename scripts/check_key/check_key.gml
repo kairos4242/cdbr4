@@ -1,18 +1,16 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function load_key(key_to_load){
-	//simple function to convert strings to keys
-	//for use with ini files, currently deprecated as we have moved to JSON hotkey storage
-	if is_string(key_to_load)
+///check_key(hotkey)
+function check_key(key_to_check){
+	//Note that the syntax here needs to be check_key(hotkey_struct.key)
+	if is_string(key_to_check)
 	{
-		if (string_lettersdigits(key_to_load) == key_to_load)
+		if (string_lettersdigits(key_to_check) == key_to_check)
 		{
 			//we have a single letter, return ord of that letter
-			return ord(key_to_load)
+			return ord(key_to_check)
 		}
 		else
 		{
-			switch key_to_load
+			switch key_to_check
 			{
 				//this is ridiculously hacky but shouldn't cause performance issues
 				//and I'm not sure there's a more elegant way to do it

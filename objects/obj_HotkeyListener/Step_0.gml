@@ -15,5 +15,20 @@ if (keyboard_check_pressed(vk_anykey))
 	}
 	ini_write_string("hotkeys", parent.hotkey, keypress)
 	ini_close()
+	//change struct hotkey
+	if parent.hotkey_type = "Terran"
+	{
+		//write change to terran struct
+		var terran_hotkey_struct = load_terran_hotkeys()
+		variable_struct_set(terran_hotkey_struct, parent.hotkey, keypress)
+		write_terran_hotkeys(terran_hotkey_struct)
+	}
+	if parent.hotkey_type = "Global"
+	{
+		//write change to global struct
+		var global_hotkey_struct = load_global_hotkeys()
+		variable_struct_set(global_hotkey_struct, parent.hotkey, keypress)
+		write_global_hotkeys(global_hotkey_struct)
+	}
 	instance_destroy()
 }
